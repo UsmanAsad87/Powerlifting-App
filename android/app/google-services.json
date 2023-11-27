@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "700184894307",
+    "project_id": "powerlifting-app-3eda5",
+    "storage_bucket": "powerlifting-app-3eda5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700184894307:android:6931602abf7e8b4dec5156",
+        "android_client_info": {
+          "package_name": "com.example.powerlifting_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700184894307-ed73k3fekl1i7844pvjnelf446que7pq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYg7bttvSN4ScTrEgWILd5GvZnDO43mfY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700184894307-ed73k3fekl1i7844pvjnelf446que7pq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
