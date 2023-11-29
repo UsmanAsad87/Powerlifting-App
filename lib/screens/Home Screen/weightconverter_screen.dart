@@ -188,6 +188,45 @@ class _Convert extends State<ConvertScreen> {
                                 color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold))
                       ],
                     ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                            color: Colors.white,
+                            height: 50,
+                            width: 200,
+                            child: TextFormField(
+                              controller: value,
+                              keyboardType: TextInputType.number,
+                              decoration: InputDecoration(
+                                  hintText: 'Enter the weight in pounds'),
+                              onChanged: (value) {
+                                setState(() {
+                                  final weightsKg = converterTools.convert1(
+                                      value, conversion1, pounds);
+                                  value2.text = weightsKg.toStringAsFixed(3);
+                                  if (value == "") {
+                                    value2.clear();
+                                  }
+                                  pounds = double.parse(value);
+                                  //imagePathway(pounds);
+                                  updateWeights(weightsKg);
+                                });
+                              },
+                              onEditingComplete: () {
+                                if (value.text.isEmpty) {
+                                  value2.clear();
+                                }
+                                pounds = double.parse(value.text);
+                                //imagePathway(pounds);
+                              },
+                            )),
+                        SizedBox(width: 10),
+                        Text("LB",
+                            style: TextStyle(
+                                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold))
+                      ],
+                    ),
                     SizedBox(height: 50),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
